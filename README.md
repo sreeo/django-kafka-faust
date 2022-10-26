@@ -16,6 +16,8 @@ Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings
 
 -  Run `docker-compose -f local.yml up django kafka_consumer` to start the django and kafka consumer services.
 
+- If you are running this for the first time, you might have to wait for the kafka service to start before initialising the django and kafka consumer containers. If the kafka service is not up, the django and consumer will crash.
+
 
 ### API
 An API has been exposed which consumes data and publishes a message to the kafka service. The consumer will read and persist the body to the DB.
