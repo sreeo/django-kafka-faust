@@ -20,7 +20,8 @@ Moved to [settings](http://cookiecutter-django.readthedocs.io/en/latest/settings
 ### API
 An API has been exposed which consumes data and publishes a message to the kafka service. The consumer will read and persist the body to the DB.
 
-```curl --location --request POST 'http://localhost:8000/api/v1/metrics/bulk/' \
+```
+curl --location --request POST 'http://localhost:8000/api/v1/metrics/bulk/' \
 --header 'Content-Type: application/json' \
 --data-raw '[
     {
@@ -34,5 +35,6 @@ An API has been exposed which consumes data and publishes a message to the kafka
         "longitude": "73.0828037",
         "timestamp": "2022-10-20T15:58:44.767594+05:30"
     }
-]'```
+]'
+```
 
